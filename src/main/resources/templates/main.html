@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel = "stylesheet" type = "text/css" href = "/static/css/mainstyle.css" th:href="@{/css/mainstyle.css}" >
+</head>
+<body>
+<header>
+    <div class = "cap">
+        <div class = "gitRef"><a href = "https://github.com/DumpOnce">My Github</a></div>
+        <div class = "MainTitle"></div>
+    </div>
+    <div class = "login">
+        <div class="beauty"></div>
+         <div class = "srcImage"></div>
+         <div class  = "login"></div>
+         <div class = "password"></div>
+         <div class = "submit"></div>
+         <div class = "UsualState"></div>
+    </div>
+
+</header>
+<nav class = "LeftNavigation">
+    <div class = 'users' th:text="${number}"></div>
+    <div class = "AuthorBiography"></div>
+    <div class = "MyWorks"></div>
+    <div class = "DoPost"></div>
+    <div class = "itArticles"></div>
+    <div class = "donation"></div>
+    <div class = "forums"></div>
+</nav>
+
+<aside class = "chat">
+    <div class = "TextField"></div>
+    <div class = "WriteField"></div>
+    <div class = "InputField"></div>
+    <div class = "emailSend"></div>
+</aside>
+
+<article class = "ArticleSpace"></article>
+
+<footer class = "footer">
+    <div class = "vk"></div>
+    <div class = "telegram"></div>
+    <div class = "habr"></div>
+</footer>
+
+<div class = "FiringEmblemOnTheRightOfFooter"></div>
+
+
+</body>
+</html>

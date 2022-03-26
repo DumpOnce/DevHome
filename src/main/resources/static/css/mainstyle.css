@@ -1,0 +1,104 @@
+.cap{
+    top : 0;
+    left:0;
+    color: bisque;
+    height:200px;
+    width:70%;
+    position:absolute;
+    background-color:orange;
+}
+
+.gitRef{
+    position:absolute;
+    left:50%;
+    top:70%;
+    border: 10px black;
+    color:yellow;
+    background-color: aqua;
+}
+
+
+.login{
+    position:absolute;
+    right:0;
+    top:0;
+    color:yellow;
+    background-color: mistyrose;
+    height:200px;
+    width:30%;
+}
+.beauty {
+     width: 96px;
+     height: 48px;
+     background: #eee;
+     border-color: rgb(43, 85, 115);
+     border-style: solid;
+     border-width: 2px 2px 50px 2px;
+     border-radius: 100%;
+     position: relative;
+ }
+
+.beauty:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #eee;
+    border: 18px solid rgb(43, 85, 115);
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+}
+.beauty:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: rgb(43, 85, 115);
+    border: 18px solid #eee;
+    border-radius:100%;
+    width: 12px;
+    height: 12px;
+}
+
+.LeftNavigation{
+    position:relative;
+    left:0
+
+}
+
+
+
+.FiringEmblemOnTheRightOfFooter{
+    position:fixed;
+    top:90%;
+    left:90%;
+    width:150px;
+    height:150px;
+    background-color: #e81010;
+    color:yellow;
+
+
+}
+
+.FiringEmblemOnTheRightOfFooter::before , .FiringEmblemOnTheRightOfFooter::after{
+    content: '';
+    position:absolute;
+    top:20%;
+    height:30px;
+    width:30px;
+    background:#000;
+    animation: eye 3s ease-in-out infinite;;
+}
+
+.FiringEmblemOnTheRightOfFooter::after{
+    left:20%;
+}
+.FiringEmblemOnTheRightOfFooter::before{
+    right:20%;
+}
+
+@keyframes eye {
+    90% { transform: none; }
+    95% { transform: scaleY(0.1); }
+}

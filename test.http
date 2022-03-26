@@ -1,0 +1,10 @@
+POST http://localhost:8082/main/addit
+Content-Type: application/json
+
+{
+  "id": 5346,
+  "firstName": "ferg",
+  "lastName": "fergerg"
+
+}
+

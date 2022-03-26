@@ -1,0 +1,6 @@
+{
+  "timestamp": "2022-03-25T18:21:00.505+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/main/addit"
+}

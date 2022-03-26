@@ -1,0 +1,6 @@
+{
+  "timestamp": "2022-03-25T18:59:56.162+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "path": "/main/addit"
+}

@@ -1,0 +1,208 @@
+GET http://localhost:8082/mainPage
+
+<> 2022-03-26T191042.200.html
+
+###
+
+GET http://localhost:8080/mainPage
+
+<> 2022-03-26T191027.404.html
+
+###
+
+POST http://localhost:8082/main/addit
+Content-Type: application/json
+
+{
+  "id": 5346,
+  "firstName": "ferg",
+  "lastName": "fergerg"
+
+}
+
+<> 2022-03-26T021527.200.json
+
+###
+
+POST http://localhost:8082/main/addit
+Content-Type: application/json
+
+{
+  "id": 5346,
+  "firstName": "ferg",
+  "lastName": "fergerg"
+
+}
+
+###
+
+POST http://localhost:8082/main/addit?id=324&firstName=fre&lastName=gvrtgv
+
+<> 2022-03-25T220458.400.json
+
+###
+
+GET http://localhost:8082/main/addit?id=324&firstName=fre&lastName=gvrtgv
+
+<> 2022-03-25T220237.400.json
+
+###
+
+GET http://localhost:8082/main/addit?id=324&firstname=fre&lastname=gvrtgv
+
+<> 2022-03-25T220205.400.json
+
+###
+
+GET http://localhost:8082/main/addit?id=324&firstname=fre&lastname=gvrtgv
+
+<> 2022-03-25T215956.400.json
+
+###
+
+GET http://localhost:8082/main/addit?id=324&firstName=fre&lastName=gvrtgv
+
+<> 2022-03-25T215941.400.json
+
+###
+
+GET http://localhost:8082/main/addit?id=324&firstName=fre&lastName=gvrtgv
+
+<> 2022-03-25T215938.400.json
+
+###
+
+GET http://localhost:8082/main/addit?fname=fre&id=324&lname=gvrtgv
+
+<> 2022-03-25T215846.200.json
+
+###
+
+GET http://localhost:8082/main/addit?fname=fre&id=324&lname=gvrtgv
+
+<> 2022-03-25T212233.200.json
+
+###
+
+GET http://localhost:8082/main/addit?fname=fre&id=324&lname=gvrtgv
+
+<> 2022-03-25T212127.200.json
+
+###
+
+GET http://localhost:8082/main/addit?fname=fre&id=324&lname=gvrtgv
+
+<> 2022-03-25T212100.500.json
+
+###
+
+GET http://localhost:8082/main/addit?fname=fre&id=324&lname=gvrtgv
+
+<> 2022-03-25T212006.500.json
+
+###
+
+GET http://localhost:8082/main
+
+<> 2022-03-25T211951.200.txt
+
+###
+
+GET http://localhost:8082/main/addit
+
+<> 2022-03-25T205913.405.json
+
+###
+
+GET http://localhost:8082/main
+
+<> 2022-03-25T205858.200.txt
+
+###
+
+POST http://localhost:8082/main/addit?id=43&firstname=Nikita&lastname=borkov
+
+<> 2022-03-25T205137.405.json
+
+###
+
+GET http://localhost:8082/main/addit?id=43&firstname=Nikita&lastname=borkov
+
+<> 2022-03-25T204904.400.json
+
+###
+
+GET http://localhost:8082/main
+
+<> 2022-03-25T204826.200.txt
+
+###
+
+GET http://localhost:8082/main
+
+<> 2022-03-25T204547.400.json
+
+###
+
+GET http://localhost/main
+
+<> 2022-03-25T204532.404.html
+
+###
+
+GET http://localhost/hello_world
+
+<> 2022-03-25T204521.404.html
+
+###
+
+GET http://localhost:8081
+
+<> 2022-03-25T204413.200.html
+
+###
+
+GET http://localhost:8082/main?id=43&firstname=Nikita&lastname=borkov
+
+<> 2022-03-25T204341.400.json
+
+###
+
+GET http://localhost:8082/main/?id=43&firstname=Nikita&lastname=borkov
+
+<> 2022-03-25T203941.400.json
+
+###
+
+GET http://localhost:8082/main/?id=43&firstname=Nikita&lastname=borkov
+
+<> 2022-03-25T203907.405.json
+
+###
+
+GET http://localhost:8082/main/?id=43&firstname=Nikita&lastname=borkov
+
+<> 2022-03-25T203239.405.json
+
+###
+
+GET http://localhost:8082/main/?id=43&firstname=Nikita&lastname=borkov
+
+###
+
+GET http://localhost:8082/main/?id=43&firstname=Nikita&lastname=borkov
+
+<> 2022-03-25T203006.400.json
+
+###
+
+GET http://localhost:8081
+
+###
+
+GET http://localhost:8080
+
+<> 2022-03-24T152311.200.html
+
+###
+
