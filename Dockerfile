@@ -1,4 +1,5 @@
-FROM openjdk:8
-EXPOSE 8082
-ADD target/Spring-boot-docker.jar Spring-boot-docker.jar
-ENTRYPOINT ["java","-jar","Spring-boot-docker.jar"]
+FROM jdk-11.0.10.9-hotspot
+
+COPY target/untitled.jar /demo.jar
+
+CMD ["java","-jar","/demo.jar"]
