@@ -1,17 +1,28 @@
-FROM maven:3.6.3-jdk-11 AS MAVEN_BUILD
+FROM openjdk:11-jre-slim AS builder
+RUN groupadd -g 1001 -r builder && useradd -u 1001 -r -g builder -m -d /builder builder
+WORKDIR /builder
+ENV JAR_FILE=target/minimum-image.jar
+COPY --chown=builder:builder ${JAR_FILE} application.jar
+RUN java -jar application.jar #extract -Djarmode=layertools
+COPY --chown=builder:builder run.sh run.sh
 
-COPY ./ ./
+FROM openjdk:11-jre-slim
+RUN groupadd -g 1001 -r app && useradd -u 1001 -r -g app app
+USER app
 
-RUN mvn clean package
+WORKDIR /application
+# RUN true - is fix for copy docker bug
+COPY --from=builder /builder/dependencies/ ./
+RUN true
+COPY --from=builder /builder/spring-boot-loader/ ./
+RUN true
+COPY --from=builder /builder/snapshot-dependencies/ ./
+RUN true
+COPY --from=builder /builder/application/ ./
+RUN true
+COPY --from=builder /builder/run.sh ./
+RUN true
 
+EXPOSE 8080
 
-FROM openjdk:11.0.7-jdk-slim
-
-COPY --from=MAVEN_BUILD /target/untitled.jar /demo.jar
-
-
-
-#MAINTAINER baeldung.com
-
-
-CMD ["java","-jar","/demo.jar"]
+CMD ["/bin/sh", "run.sh"]
