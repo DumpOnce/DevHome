@@ -8,5 +8,8 @@
 
 ### Rest API based application
 ### (-)You can work with Docker
-
+###
+###
 ### Cookies and Sessions used
+###
+### JWT Auth
